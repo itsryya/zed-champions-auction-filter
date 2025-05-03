@@ -1,13 +1,13 @@
-# Zed Champions Auction Filter (With Color Filter)
+# Zed Champions Auction Filters + Sorting
 
 ## Overview
-This [Tampermonkey](https://www.tampermonkey.net/) userscript enhances the [Zed Champions auction page](https://app.zedchampions.com/auctions) by adding filtering and sorting capabilities. Filter auctions by **star rating**, **bloodline**, **color**, and **winrate**, and sort by time remaining. The script adds a sticky filter bar at the top of the page for easy access to these features.
+This [Tampermonkey](https://www.tampermonkey.net/) userscript enhances the [Zed Champions auction page](https://app.zedchampions.com/auctions) by adding filtering and sorting capabilities. Filter auctions by **bloodline**, **star rating**, **winrate**, **color**,  and sort by time remaining. The script adds a sticky filter bar at the top of the page for easy access to these features.
 
 ## Features
-- **Star Rating Filter**: Filter auctions by star ratings (1 to 5, in 0.5 increments).
 - **Bloodline Filter**: Filter by bloodlines (Nakamoto, Szabo, Finney, Buterin).
-- **Color Filter**: Filter by a wide range of colors (e.g., Sea Pink, Pomegranate, Dodger Blue) using a dropdown menu.
+- **Star Rating Filter**: Filter auctions by star ratings (1 to 5, in 0.5 increments).
 - **Winrate Filter**: Filter by minimum winrate percentage (e.g., ≥ 0%, ≥ 5%) using a dropdown menu.
+- **Color Filter**: Filter by a wide range of colors (e.g., Sea Pink, Pomegranate, Dodger Blue) using a dropdown menu.
 - **Sort by Time**: Sort auctions by time remaining (ascending order).
 - **Status Display**: Shows the number of visible auctions out of the total (e.g., "10/50 AUCTIONS").
 
@@ -60,7 +60,7 @@ To get the best experience and ensure all auctions are loaded for filtering, fol
 
 ## Troubleshooting
 - **No Filters Appear**:
-  - Ensure you’re on the correct page ([https://app.zedchampions.com/auctions](https://app.zedchampions.com/auctions)) and that Tampermonkey is enabled.
+  - Ensure you’re on the correct page ([https://app.zedchampions.com/auctions](https://app.zedchampions.com/auctions)) and that Tampermonkey (+ developer mode in the extension) is enabled.
 - **Auctions Not Loading**:
   - Follow the usage steps to select and deselect the 5-star rating to trigger the page’s lazy loading.
 - **Winrate Filter Not Working**:
