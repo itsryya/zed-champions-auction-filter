@@ -11,6 +11,12 @@ This [Tampermonkey](https://www.tampermonkey.net/) userscript enhances the [Zed 
 - **Sort by Time**: Sort auctions by time remaining (ascending order).
 - **Status Display**: Shows the number of visible auctions out of the total (e.g., "10/50 AUCTIONS").
 
+### Screenshots
+![Auction Filter Preview 1](https://raw.githubusercontent.com/itsryya/zed-champions-auction-filter/main/auctionfilter-preview-1.png)
+
+![Auction Filter Preview 2](https://raw.githubusercontent.com/itsryya/zed-champions-auction-filter/main/auctionfilter-preview-2.png)
+
+
 ## Installation
 1. **Install Tampermonkey**:
    - Install the Tampermonkey extension for your browser:
