@@ -8,6 +8,9 @@ This [Tampermonkey](https://www.tampermonkey.net/) userscript enhances the [Zed 
 - **Star Rating Filter**: Filter auctions by star ratings (1 to 5, in 0.5 increments).
 - **Winrate Filter**: Filter by minimum winrate percentage (e.g., ≥ 0%, ≥ 5%) using a dropdown menu.
 - **Color Filter**: Filter by a wide range of colors (e.g., Sea Pink, Pomegranate, Dodger Blue) using a dropdown menu.
+- **Price Filters**:
+  - **No Price**: Filter auctions that do not yet have a price (e.g., newly listed or no bids).
+  - **Price < 1000 ZED**: Filter auctions with a current price less than 1000 ZED.
 - **Sort by Time**: Sort auctions by time remaining (ascending order).
 - **Status Display**: Shows the number of visible auctions out of the total (e.g., "10/50 AUCTIONS").
 
@@ -35,14 +38,14 @@ This [Tampermonkey](https://www.tampermonkey.net/) userscript enhances the [Zed 
 ## Usage Instructions
 To get the best experience and ensure all auctions are loaded for filtering, follow these steps:
 
-1. **Start the Automatic Load of All Auctions**:
-   - When you first load the auction page, select the **5-star rating** filter by clicking the "5" button under the "Star Rating" section in the filter bar.
-   - This triggers the page to automatically load all available auctions (the site may use lazy loading, so this ensures all data is fetched).
-   - Wait a few seconds for the auctions to load fully.
+1. **Start by Filtering for Auctions with No Price**:
+   - When you first load the auction page, select the **"No Price"** filter by checking the "No Price" checkbox under the "Price" section in the filter bar.
+   - This triggers the page to automatically load as many auctions as possible, as the script searches for auctions without a price (the site may use lazy loading, so this ensures more data is fetched, including unpriced auctions).
+   - Wait a few seconds for the auctions to load fully. You may need to wait longer if the marketplace delays loading auctions without a price (sometimes up to 10 minutes).
 
-2. **Deselect the 5-Star Filter to See All Auctions**:
-   - Click the "5" button again to deselect the 5-star filter.
-   - This will display all auctions on the page, now that they’ve been loaded.
+2. **Deselect the "No Price" Filter to See All Auctions (Optional)**:
+   - If you want to see all auctions after loading, uncheck the "No Price" filter.
+   - This will display all auctions on the page, now that more have been loaded.
 
 3. **Make Your Specific Selections**:
    - Use the filter bar to apply your desired filters:
@@ -50,6 +53,10 @@ To get the best experience and ensure all auctions are loaded for filtering, fol
      - **Bloodline**: Click the bloodlines to filter (e.g., "Nakamoto", "Szabo"). Click again to deselect.
      - **Color**: Click the "SELECT COLOR" dropdown, then choose a color (e.g., "Dodger Blue"). Click the same color to clear the filter.
      - **Winrate**: Click the "WINRATE" dropdown, then select a minimum winrate (e.g., "≥ 5%"). Click the same option to clear the filter.
+     - **Price**:
+       - Check "No Price" to show only auctions without a price (e.g., newly listed or no bids). Uncheck to disable.
+       - Check "Price < 1000 ZED" to show only auctions with a price less than 1000 ZED. Uncheck to disable.
+       - Note: These two price filters are mutually exclusive—enabling one will disable the other.
      - **Sort by Time**: Click "SORT BY TIME" to sort auctions by time remaining (ascending). Click again to disable sorting.
    - The status bar (e.g., "10/50 AUCTIONS") will update to show how many auctions match your filters.
 
@@ -67,7 +74,17 @@ To get the best experience and ensure all auctions are loaded for filtering, fol
   - Ensure auctions have loaded fully, as winrate data may not be available until the page fetches all details.
 
 ## Version
-- **1.8** (as of the script’s metadata)
+- **1.10** (as of May 7th)
+
+## Changelog
+
+### Version 1.10 (May 7th 2025)
+- **Added Price Filters**:
+  - **No Price Filter**: Added a "No Price" checkbox to filter auctions that do not yet have a price. This helps identify auctions that are newly listed or have no bids.
+  - **Price < 1000 ZED Filter**: Added a "Price < 1000 ZED" checkbox to filter auctions with a current price less than 1000 ZED.
+  - These filters are mutually exclusive: enabling one will disable the other to avoid conflicts.
+- **Improved UI**:
+  - Adjusted the filter bar’s left padding from `padding-left: 140px` to `padding-left: 32px` for better alignment on the page.
 
 ## Author
 Developed by Ryya for use on the Zed Champions auction platform. Feel free to modify the script for personal use.
