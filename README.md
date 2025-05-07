@@ -19,6 +19,9 @@ This [Tampermonkey](https://www.tampermonkey.net/) userscript enhances the [Zed 
 
 ![Auction Filter Preview 2](https://raw.githubusercontent.com/itsryya/zed-champions-auction-filter/main/auctionfilter-preview-2.png)
 
+**v2**
+![Auction Filter Preview 2](https://raw.githubusercontent.com/itsryya/zed-champions-auction-filter/main/auction-filter-preview-v2.png)
+
 
 ## Installation
 1. **Install Tampermonkey**:
